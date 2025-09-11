@@ -138,7 +138,7 @@ impl QuicConnectionUtils {
 
         let mut endpoint = {
             let client_socket =
-                solana_net_utils::bind_in_range(IpAddr::V4(Ipv4Addr::UNSPECIFIED), (8000, 10000))
+                solana_net_utils::bind_in_range(IpAddr::V4(Ipv4Addr::UNSPECIFIED), (9000, 10000))
                     .expect("create_endpoint bind_in_range")
                     .1;
             let mut config = EndpointConfig::default();
